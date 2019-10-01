@@ -4,6 +4,11 @@ Feature: Visitor can see products sorted in different categories
   I would like to see the products sorted in categories
 
   Background: 
+    Given the following categories exists
+      | title        |
+      | Starters     |
+      | Main Courses |
+      | Desserts     |
     Given the following products exists
       | name          | description                     | price |
       | garlic bread  | garlic, bread, butter           | 30    |

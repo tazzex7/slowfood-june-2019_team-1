@@ -7,3 +7,9 @@ Given("the following products exists") do |table|
     FactoryBot.create(:product, product)
   end
 end
+
+Given("the following categories exists") do |table|
+  table.hashes.each do |category|
+    FactoryBot.create(:category, category)
+  end
+end
