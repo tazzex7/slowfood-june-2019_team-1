@@ -1,7 +1,7 @@
 Feature: Visitor can view menu
-As a visitor 
-In order to get an overview of the restaurant's products 
-I would like to be able to see a menu
+  As a visitor 
+  In order to get an overview of the restaurant's products 
+  I would like to be able to see a menu
 
   Background: 
     Given the following products exists
@@ -17,9 +17,9 @@ I would like to be able to see a menu
   Scenario: Be able to see menu
     Given I visit the page 
     Then I should see 'Menu'
-    And I should see "garlic bread"
     And I should see "margherita"
-    And I should see "vesuvio"
-    And I should see "calzone"
-    And I should see "ice-cream strawberry"
-    And I should see "ice-cream vanilla"
+    And I should see "cheese, tomato sauce, basil"
+    And I should see "70.0"
+    And I should see "ice-cream"
+    And I should see "vanilla"
+    And I should see "40.0"
