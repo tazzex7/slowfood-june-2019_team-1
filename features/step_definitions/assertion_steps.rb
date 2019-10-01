@@ -1,5 +1,5 @@
-Then("I should see {string}") do |greeting|
-  expect(page).to have_content greeting
+Then("I should see {string}") do |content|
+  expect(page).to have_content content
 end
 
 Then("I should be on Login page") do

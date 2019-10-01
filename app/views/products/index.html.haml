@@ -1,0 +1,7 @@
+%h1 Menu for FoodComrade restaurant
+#ul
+  - @products.each do |product|
+    %li
+      = product.name
+      = product.description
+      = product.price

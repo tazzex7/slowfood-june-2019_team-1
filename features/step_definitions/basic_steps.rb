@@ -10,3 +10,8 @@ When("I fill in {string} with {string}") do |field, content|
   fill_in field, with: content
 end
 
+Given("the following products exists") do |table|
+  table.hashes.each do |product|
+    FactoryBot.create(:product, product)
+  end
+end
