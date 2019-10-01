@@ -1,2 +1,10 @@
-%h1 Menu#index
-%p Find me in app/views/menu/index.html.haml
+%h1 Menu for FoodComrade restaurant
+%br/
+%ul
+  - @products.each do |product|
+    %li 
+      = product.name
+      %br/
+      = product.description
+      %br/
+      = product.price
