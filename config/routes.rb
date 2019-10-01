@@ -1,6 +1,3 @@
 Rails.application.routes.draw do
-
-root controller: :menu, action: :index
-resources :products
-
+  root controller: :product, action: :index
 end

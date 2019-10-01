@@ -1,4 +1,4 @@
-class MenuController < ApplicationController
+class ProductController < ApplicationController
   def index
     @products = Product.all
   end
