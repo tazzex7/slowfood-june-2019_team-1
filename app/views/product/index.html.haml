@@ -1,5 +1,26 @@
 %h1 Menu for FoodComrade restaurant
-#ul
+
+#category1
+%h2 Starters
+%ul#starterslist
+  - @products.each do |product|
+    %li
+      = product.name
+      = product.description
+      = product.price
+
+#category2
+%h2 Main Courses
+%ul#maincourseslist
+  - @products.each do |product|
+    %li
+      = product.name
+      = product.description
+      = product.price
+
+#category3
+%h2 Desserts
+%ul#dessertslist
   - @products.each do |product|
     %li
       = product.name

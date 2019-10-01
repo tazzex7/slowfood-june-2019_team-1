@@ -16,6 +16,6 @@ Feature: Visitor can see products sorted in different categories
     Then I should see 'Menu'
 
   Scenario: Be able to see menu
-    Then I should see "Starter"
-    And I should see "Main Course"
-    And I should see "Dessert"
+    Then I should see "Starters"
+    And I should see "Main Courses"
+    And I should see "Desserts"
