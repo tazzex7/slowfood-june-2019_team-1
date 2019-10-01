@@ -12,9 +12,14 @@ I would like to be able to see a menu
       | calzone       | cheese, tomato sauce, ham       | 80    |
       | ice-cream     | strawberry                      | 40    |
       | ice-cream     | vanilla                         | 40    |
-      | ice-cream     | chocolate                       | 40    |     
+  
   
   Scenario: Be able to see menu
     Given I visit the page 
     Then I should see 'Menu'
     And I should see "garlic bread"
+    And I should see "margherita"
+    And I should see "vesuvio"
+    And I should see "calzone"
+    And I should see "ice-cream strawberry"
+    And I should see "ice-cream vanilla"
