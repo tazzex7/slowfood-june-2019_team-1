@@ -5,5 +5,6 @@ Feature: User visits Food Comrade landing page
 
   Scenario: User visits landing page
     When I visit the landing page
+    Then I should see "Food Comrade"
     And I click "Menu"
     Then I should see "Joe's pizza"

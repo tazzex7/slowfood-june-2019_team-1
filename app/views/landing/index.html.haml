@@ -1,2 +1,18 @@
-%h1 Landing#index
-%p Find me in app/views/landing/index.html.haml
+%body
+  .wrapper
+    %header
+      %nav
+        %ul
+          %li
+            = link_to 'Home', root_path
+          %li 
+            -# = link_to 'Menu', menu_path
+          %li
+            -# = link_to ('Login', new_user_session_path)
+          %li
+            -# = checkout_link
+    %section
+      %h1 Food Comrade
+      .info
+      %p Welcome
+    %footer
