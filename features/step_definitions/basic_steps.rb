@@ -6,6 +6,10 @@ Given("I click {string}") do |element|
   click_on element
 end
 
+Given("I visit the menu page") do
+  visit products_path
+end
+
 When("I fill in {string} with {string}") do |field, content|
   fill_in field, with: content
 end
