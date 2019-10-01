@@ -7,7 +7,7 @@ Then("I should see {string}") do |string|
 end
 
 Given("the following products exists") do |table|
-  table.hashes.each do |hash|
-    FactoryBot.create(:product, hash)
+  table.hashes.each do |product|
+    FactoryBot.create(:product, product)
   end
 end
