@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
   devise_for :users
-
-  resources :products
-
-  root controller: :landing, action: :index
+  
+  root controller: :products, action: :index
 end

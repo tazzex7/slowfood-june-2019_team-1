@@ -15,7 +15,7 @@ Feature: Visitor can view menu
   
   
   Scenario: Be able to see menu
-    Given I visit the menu page 
+    Given I visit the landing page 
     Then I should see 'Menu'
     And I should see "margherita"
     And I should see "cheese, tomato sauce, basil"
