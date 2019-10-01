@@ -16,4 +16,4 @@ I would like to be able to register an account
     And I fill in "Password" with "password"
     And I fill in "Password confirmation" with "password"
     And I click "Sign up"
-    Then I should see "Welcome John!"
+    Then I should see "Hello, John"
