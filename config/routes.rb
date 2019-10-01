@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-get 'menu/index'
+  get 'menu/index'
 
-root 'menu#index'
+root controller: :menu, action: :index
 
 end
