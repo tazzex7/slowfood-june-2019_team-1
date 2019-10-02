@@ -4,17 +4,21 @@ Feature: Visitor can view menu products ordered in categories
   I would like to see the products sorted in categorie
 
   Background: 
-  # Given the following categories exists
-  # Add category tag
+    Given the following categories exists
+      | title         |
+      | Starters      |
+      | Main Courses  |
+      | Desserts      |
     Given the following products exists
-      | name          | description                     | price |
-      | garlic bread  | garlic, bread, butter           | 30    |
-      | margherita    | cheese, tomato sauce, basil     | 70    |
-      | vesuvio       | cheese, tomato sauce, ham       | 70    |
-      | calzone       | cheese, tomato sauce, ham       | 80    |
-      | ice-cream     | strawberry                      | 40    |
-      | ice-cream     | vanilla                         | 40    |
-    Given I visit the landing page 
+      | name          | description                     | price | category        |
+      | garlic bread  | garlic, bread, butter           | 30    | Starters        |
+      | margherita    | cheese, tomato sauce, basil     | 70    | Main Courses    |
+      | vesuvio       | cheese, tomato sauce, ham       | 70    | Main Courses    |
+      | calzone       | cheese, tomato sauce, ham       | 80    | Main Courses    |
+      | ice-cream     | strawberry                      | 40    | Desserts        |
+      | ice-cream     | vanilla                         | 40    | Desserts        |
+
+    Given I visit the landing page
     Then I should see 'Menu'
   
   Scenario: Products displayed in categories
@@ -24,5 +28,3 @@ Feature: Visitor can view menu products ordered in categories
     And I should see "margherita"
     And I should see "Desserts"
     And I should see "ice-cream"
-
-  

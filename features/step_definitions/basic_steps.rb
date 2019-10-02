@@ -12,7 +12,9 @@ end
 
 Given("the following products exists") do |table|
   table.hashes.each do |product|
-    FactoryBot.create(:product, product)
+    category = Category.find_or_create_by(title: product[:category])
+    product.except!('category')
+    FactoryBot.create( :product, product.merge(category: category))
   end
 end
 
@@ -27,4 +29,10 @@ Given("the following user exists") do |table|
     FactoryBot.create(:user, user)
   end
 end
-
+# Given("The following cars exist") do |table|
+#   table.hashes.each do |car|
+#       user = User.find_or_create_by(first_name: car[:user])
+#       car.except!('user')
+#       FactoryBot.create( :automobile, car.merge(user: user))
+#   end
+# end
