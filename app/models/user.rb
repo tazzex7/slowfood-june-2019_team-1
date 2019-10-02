@@ -6,5 +6,4 @@ class User < ApplicationRecord
 
   validates :name, length: { maximum: 15 }
   validates_presence_of :name
-  validates_uniqueness_of :name
 end
