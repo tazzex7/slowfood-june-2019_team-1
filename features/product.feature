@@ -14,7 +14,7 @@ Feature: Visitor can view menu
       | ice-cream     | vanilla                         | 40    |
   
   
-  Scenario: Be able to see menu
+  Scenario: Be able to see menu[Happy Path]
     Given I visit the landing page 
     Then I should see 'Menu'
     And I should see "margherita"
