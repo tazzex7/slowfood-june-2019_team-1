@@ -4,6 +4,8 @@ Feature: Visitor can view menu products ordered in categories
   I would like to see the products sorted in categorie
 
   Background: 
+  # Given the following categories exists
+  # Add category tag
     Given the following products exists
       | name          | description                     | price |
       | garlic bread  | garlic, bread, butter           | 30    |
