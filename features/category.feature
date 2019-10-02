@@ -1,5 +1,5 @@
 Feature: Visitor can view menu products ordered in categories
- As a visitor,
+  As a visitor,
   In order to choose product more easily
   I would like to see the products sorted in categorie
 

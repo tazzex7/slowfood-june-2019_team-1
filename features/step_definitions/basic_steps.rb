@@ -2,12 +2,12 @@ Given("I visit the landing page") do
   visit root_path
 end
 
-Given("I click {string}")do |element|
+Given("I click {string}") do |element|
   click_on element
 end
 
 When("I fill in {string} with {string}") do |field, content|
-    fill_in field, with: content
+  fill_in field, with: content
 end
 
 Given("the following products exists") do |table|
@@ -29,10 +29,3 @@ Given("the following user exists") do |table|
     FactoryBot.create(:user, user)
   end
 end
-# Given("The following cars exist") do |table|
-#   table.hashes.each do |car|
-#       user = User.find_or_create_by(first_name: car[:user])
-#       car.except!('user')
-#       FactoryBot.create( :automobile, car.merge(user: user))
-#   end
-# end
