@@ -35,3 +35,13 @@ Feature: Sign Up
     Then I should see "Name is too long (maximum is 15 characters)"
     And I should see "Password is too short (minimum is 6 characters)"
     And I should see "Password confirmation doesn't match Password"
+
+  Scenario: Duplicate users [Sad Path]
+    When I fill in "Name" with "John"
+    And I fill in "Email" with "john@doe.com"
+    And I fill in "Password" with "password"
+    And I fill in "Password confirmation" with "password"
+    And I click "Sign up"
+    Then I should see "Name is too long (maximum is 15 characters)"
+    And I should see "Password is too short (minimum is 6 characters)"
+    And I should see "Password confirmation doesn't match Password"
