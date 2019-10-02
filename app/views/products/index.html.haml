@@ -1,7 +1,9 @@
 %h1 Menu for FoodComrade restaurant
 #ul
   - @products.each do |product|
-    %li
-      = product.name
-      = product.description
-      = product.price
+    %tr
+      %td= product.name
+      %td= product.description
+      %td= product.price
+      %td= link_to 'Edit', edit_product_path(product)
+      %td= link_to 'Delete', product_path(product), method: :delete, data: { confirm: 'Are you sure?' }
