@@ -17,11 +17,10 @@ Feature: Visitor can view menu products ordered in categories
       | calzone       | cheese, tomato sauce, ham       | 80    | Main Courses    |
       | ice-cream     | strawberry                      | 40    | Desserts        |
       | ice-cream     | vanilla                         | 40    | Desserts        |
-
     Given I visit the landing page
     Then I should see 'Menu'
-  
-  Scenario: Products displayed in categories
+
+  Scenario: Products displayed in categories [Happy Path]
     Then I should see "Starters"
     And I should see "garlic bread"
     And I should see "Main Courses"
