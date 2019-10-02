@@ -3,10 +3,12 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
+  before_action :authenticate_admin!, only: [:edit]
   def edit
     @product = Product.find(params[:id])
   end
 
+  before_action :authenticate_admin!, only: [:update]
   def update
     @product = Product.find(params[:id])
 
@@ -17,7 +19,8 @@ class ProductsController < ApplicationController
     end
   end
 
-  def delete
+  before_action :authenticate_admin!, only: [:destroy]
+  def destroy
     @product = Product.find(params[:id])
     @product.destroy
 
