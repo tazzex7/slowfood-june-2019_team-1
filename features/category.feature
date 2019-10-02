@@ -17,7 +17,7 @@ Feature: Visitor can see products sorted in different categories
       | calzone       | cheese, tomato sauce, ham       | 80    |
       | ice-cream     | strawberry                      | 40    |
       | ice-cream     | vanilla                         | 40    |
-    Given I visit the page 
+    Given I visit the landing page 
     Then I should see 'Menu'
 
   Scenario: Be able to see menu
