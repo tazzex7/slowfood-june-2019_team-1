@@ -9,3 +9,8 @@ products = [
   Product.create(name: "Ice-cream", description: "vanilla", price: 40),
   Product.create(name: "Ice-cream", description: "strawberry", price: 40)
 ]
+categories = [
+  category.create(title: "Starters")
+  category.create(title: "Main Courses")
+  category.create(title: "Desserts")
+]
