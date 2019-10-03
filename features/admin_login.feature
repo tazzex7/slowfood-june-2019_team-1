@@ -7,9 +7,12 @@ Feature: Restaurant owner can log in
     Given the following user exists
       | name | email        | password | admin |
       | John | john@doe.com | password | true  |
-    Given the following products exists
-      | name  | description | price |
-      | pizza | tasty       | 10    |
+    Given the following categories exists
+      | title         |
+      | Starters      |
+    And the following products exists
+      | name         | description           | price | category |
+      | garlic bread | garlic, bread, butter | 30    | Starters |
     And I visit the landing page
 
   Scenario: Owner successfully logs in
