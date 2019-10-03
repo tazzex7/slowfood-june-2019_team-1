@@ -9,7 +9,7 @@ Feature: Visitor can view menu products ordered in categories
       | Starters      |
       | Main Courses  |
       | Desserts      |
-    Given the following products exists
+    And the following products exists
       | name          | description                     | price | category        |
       | garlic bread  | garlic, bread, butter           | 30    | Starters        |
       | margherita    | cheese, tomato sauce, basil     | 70    | Main Courses    |
@@ -17,8 +17,7 @@ Feature: Visitor can view menu products ordered in categories
       | calzone       | cheese, tomato sauce, ham       | 80    | Main Courses    |
       | ice-cream     | strawberry                      | 40    | Desserts        |
       | ice-cream     | vanilla                         | 40    | Desserts        |
-    Given I visit the landing page
-    Then I should see 'Menu'
+    And I visit the landing page
 
   Scenario: Products displayed in categories [Happy Path]
     Then I should see "Starters"
