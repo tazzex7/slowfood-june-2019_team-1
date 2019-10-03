@@ -17,4 +17,4 @@ Feature: Restaurant owner can log in
     And I fill in "Email" with "john@doe.com"
     And I fill in "Password" with "password"
     And I click "Log in"
-    And I click "Delete"
+    Then I should see "Edit"
