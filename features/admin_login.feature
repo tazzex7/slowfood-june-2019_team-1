@@ -8,7 +8,7 @@ Feature: Restaurant owner can log in
       | name | email        | password | admin |
       | John | john@doe.com | password | true  |
       | Jane | jane@doe.com | password | false |
-    Given the following categories exists
+    And the following categories exists
       | title         |
       | Starters      |
     And the following products exists
