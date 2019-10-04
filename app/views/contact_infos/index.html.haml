@@ -11,5 +11,6 @@
     %br
       %strong About us:
       = contact_info.content
+    %br
     - if current_user.try(:admin?)
-      = link_to 'Edit'
+      = link_to 'Edit', edit_contact_info_path(contact_info)
