@@ -1,3 +1,6 @@
 class ContactInfo < ApplicationRecord
-  validates_presence_of :name, :number, :address, :content
+  validates :name, presence: true
+  validates :address, presence: true
+  validates :number, presence: true
+  validates :content, presence: true
 end
