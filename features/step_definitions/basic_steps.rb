@@ -29,3 +29,9 @@ Given("the following user exists") do |table|
     FactoryBot.create(:user, user)
   end
 end
+
+Given("the following contact info exists") do |table|
+  table.hashes.each do |info|
+    FactoryBot.create(:contact_info, info)
+  end
+end
