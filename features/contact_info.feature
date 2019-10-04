@@ -10,6 +10,7 @@ Feature: User can see contact info
     Given I visit the landing page
 
   Scenario: User sees restaurant info
+    When I click "Contact us"
     Then I should see "Contact information"
     And I should see "Phone number:"
     And I should see "Address:"

@@ -5,7 +5,7 @@ ContactInfo.destroy_all
 Product.destroy_all
 Category.destroy_all
 
-contactinfo = ContactInfo.create(name: "Comrade", number: 070123456, address: "Sveavägen 16, Stockholm", content: "Everyone is equal")
+contact_info = ContactInfo.create(name: "Comrade", number: 070123456, address: "Sveavägen 16, Stockholm", content: "Everyone is equal")
 
 
 starter = Category.create(title: "Starters")

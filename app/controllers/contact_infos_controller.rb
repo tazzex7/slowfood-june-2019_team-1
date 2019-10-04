@@ -1,15 +1,14 @@
 class ContactInfosController < ApplicationController
   def index
-    @contact_infos = Contact_Info.all
+    @contact_infos = ContactInfo.all
   end
 
   def new
-    @contact_info = Contact_Info.new
+    @contact_info = ContactInfo.new
   end
-  
 
   def edit
-    @contact_info = Contact_Info.find(params[:id])
+    @contact_info = ContactInfo.find(params[:id])
   end
 
   private
